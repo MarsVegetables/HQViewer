@@ -1,0 +1,17 @@
+# https://note.nkmk.me/en/python-pip-install-requirements/
+# for m1 mac 
+# using 
+# conda install --file requirements.txt 
+# to install all requirements package
+###### Requirements without Version Specifiers ######
+PyQt5
+# PyQt6
+# for m1, we may need to use pyqt6
+vtk
+tqdm
+pyecharts
+pyqtchart
+PyQtWebEngine
+typing_extensions
+pymeshlab  # currently not works on M1-chip
+###### Requirements with Version Specifiers ######

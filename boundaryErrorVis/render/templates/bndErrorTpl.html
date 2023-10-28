@@ -1,0 +1,39 @@
+<!--
+ * @Date: 2021-09-08 11:17:04
+ * @LastEditors: Lei Si
+ * @LastEditTime: 2021-09-09 03:45:27
+-->
+
+{% import 'macro' as macro %}
+
+<script>
+    var x = window.innerWidth;
+    var y = window.innerHeight;
+    function resizeFresh(){
+        if(x!= window.innerWidth || y != window.innerHeight){
+            location.reload();
+        }
+    }
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ chart.page_title }}</title>
+    {{ macro.render_chart_dependencies(chart) }}
+    <script src="qrc:///qtwebchannel/qwebchannel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        try{
+            new QWebChannel(qt.webChannelTransport, function (channel) {
+                window.pyQtOpt = channel.objects.pyQtOpt;
+            });
+            }catch(e){
+                console.error(e)
+            }
+    </script>
+</head>
+<body onresize="resizeFresh()">
+    {{ macro.render_chart_content(chart) }}
+</body>
+</html>
