@@ -14,7 +14,7 @@ Boundary Error Visualization require [OptCuts](https://github.com/liminchen/OptC
 
 ## Cite
 
-'''
+```
 @INPROCEEDINGS{si2023visualization,
   author={Si, Lei and Chen, Guoning},
   booktitle={2023 IEEE Visualization and Visual Analytics (VIS)}, 
@@ -25,4 +25,4 @@ Boundary Error Visualization require [OptCuts](https://github.com/liminchen/OptC
   pages={86-90},
   keywords={Three-dimensional displays;Visual analytics;Simulation;Current measurement;Inspection;Data structures;Encoding;hex-mesh analysis;mesh quality visualization;Human-centered computing;Visualization;Visualization systems and tools},
   doi={10.1109/VIS54172.2023.00026}}
-'''
+```
